@@ -1,0 +1,109 @@
+body{
+    height: 2000px;
+}
+#nav-circular{
+    width: 500px;
+    height: 500px;
+
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    border-radius: 1000px;
+}
+#nav-circular ul{
+   width: 200px;
+   height: 200px;
+   background-color: #005ea4;
+   border-radius: 100px;
+   position: absolute;
+   top: 150px;
+   left: 150px;
+}
+#nav-circular ul::before{
+    content:"X";
+    display: block;
+    width: 240px;
+    height: 240px;
+    border-radius: 1000px;
+    position: absolute;
+    border: 3px solid #005ea4;
+    top: -23px;
+    left: -23px;
+    border-top-width: 0;
+    border-bottom-width: 5px;
+}
+#nav-circular li{
+    
+    position: absolute;
+    width: 500px;
+    left: -150px;
+    height: 50px;
+    top: 75px;
+
+
+}
+#nav-circular li i{
+    font-size: 30px;
+    background-color:#005ea4;
+    color:white;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    text-align: center;
+    line-height: 50px;
+    margin: auto;
+
+}
+#nav-circular li a{
+    display: block;
+    width: 75px;
+    text-align: center;
+    transform-origin: 37px 25px;
+    color: #333;
+
+
+}
+#nav-circular li:nth-child(2){
+      transform: rotate(-30deg);
+
+}
+#nav-circular li:nth-child(3){
+    transform: rotate(-60deg)
+}
+#nav-circular li:nth-child(4){
+    transform: rotate(-90deg)
+}
+#nav-circular li:nth-child(5){
+     transform: rotate(-120deg)
+}
+#nav-circular li:nth-child(6){
+    transform: rotate(-150deg)
+}
+#nav-circular li:nth-child(7){
+    transform: rotate(-180deg)
+}
+
+
+
+
+#nav-circular li:nth-child(2) a{
+    transform: rotate(30deg);
+
+}
+#nav-circular li:nth-child(3) a{
+  transform: rotate(60deg)
+}
+#nav-circular li:nth-child(4) a{
+  transform: rotate(90deg)
+}
+#nav-circular li:nth-child(5) a{
+   transform: rotate(120deg)
+}
+#nav-circular li:nth-child(6) a{
+  transform: rotate(150deg)
+}
+#nav-circular li:nth-child(7) a{
+  transform: rotate(180deg)
+}
+

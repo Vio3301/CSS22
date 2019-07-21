@@ -1,0 +1,24 @@
+body{
+    height: 2000px;
+}
+#big{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: relative;
+}
+#smoll{
+    width: 100px;
+    height: 100px;
+    background-color: grey;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+/* relativ
+absolut
+fixed
+-------------
+-------------
+sticki (smart fix/conditional fixation - poti sa lipesti de magina  / aceasta se realizeaza cu ajutoru bibliotecilor si JS??*/
+
