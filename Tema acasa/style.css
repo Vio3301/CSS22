@@ -1,0 +1,77 @@
+.colors{
+    color:#00B9DE;
+    color: #007F8A;
+    color: #00C7D7;
+    color: #00F3F1;
+    color:#1C1A1A ;
+
+}
+body{
+    background-color: #233;
+    font-family: 'Roboto', sans-serif;
+}
+#navbar{
+    background:linear-gradient( #000714,#000714,#032158);
+    text-align: center;
+    box-shadow: 2px 2px 2px 2px #00C7D7;
+}
+#navbar ul , #navbar li{
+  display: inline-block;
+  vertical-align: middle;
+}
+#navbar ul:First-child{
+    margin-right: 192px;
+}
+#navbar ul:nth-child(2) li a {
+    text-decoration: none;
+    color:#007F8A;
+}
+#navbar ul:last-child li a{
+    text-decoration: none;
+    color:#007F8A;
+}
+#navbar ul:last-child li{
+    margin-left: 12px;
+}
+#navbar ul:last-child {
+ margin-left: 48px;
+}
+#navbar ul:nth-child(2) li a:hover{
+    text-decoration: none;
+    color:#00B9DE;
+}
+#navbar ul:nth-child(3) li a:hover{
+    text-decoration: none;
+    color:#00B9DE;
+}
+#navbar ul:nth-child(2) li::after{
+    content: "|";
+    margin-left:12px;
+    padding-right:12px;
+    color: #00F3F1;
+}
+#navbar ul:nth-child(2) li:last-child::after{
+    content:none;
+}
+#navbar ul:nth-child(2) li:first-child{
+    display: none;
+}
+
+/* Adaptam anumite aspecte */
+@media (max-width: 784px){
+    #navbar ul:nth-child(2) li{
+        display: none;
+    }
+    #navbar ul:nth-child(2) li:first-child{
+     display: inline-block;
+    }
+    #navbar ul:nth-child(2) li:first-child::after{
+        content:none;
+    }
+    #navbar ul:nth-child(2) li:first-child:hover ~ li{
+    display: block;
+    position: absolute;
+    }
+
+
+}
