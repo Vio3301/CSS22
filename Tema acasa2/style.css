@@ -1,0 +1,137 @@
+.colors{
+    color:#00B9DE;
+    color: #013236;
+    color: #00C7D7;
+    color: #00F3F1;
+    color:#1C1A1A ;
+
+}
+body{
+    background-image: radial-gradient(#027272 45%, #017929 45%);
+    background-size: 30px 30px;
+}
+body::before{
+    content: "";
+    background-color: inherit;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vw;
+    background-image: radial-gradient(at bottom left,rgba(6, 129, 78, 0.6),grey)
+
+}
+.brand{
+    background-color:#013236;;
+    width:calc(1.76*30vh);
+    height: 30vh;
+    position: relative;
+    top: 15vh;
+    left: 7vh;
+    border-left: 8px double transparent;
+    border-right: 9px double transparent;
+    box-sizing: border-box;
+    animation: border-flicker 0.3s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+#navbar .brand::before{
+    content:"";
+    background-color: inherit;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-60deg);
+    top:0;
+    left: 0;
+    border-left:  13px double  transparent;
+    border-right: 4px double transparent;
+    box-sizing: border-box;
+    animation: border-flicker 0.3s;
+    animation-delay: 4s;
+    animation-fill-mode: forwards;
+    
+}
+#navbar .brand::after{
+    content:"";
+    background-color: inherit;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: rotate(60deg);
+    top: 0;
+    left: 0;
+    border-left:10px double transparent;
+    border-right: 5px double transparent;
+    box-sizing: border-box;
+    animation: border-flicker 0.3s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
+
+}
+#navbar .brand a{
+       
+    position: absolute;
+     display: block;
+     z-index: 2;
+     width: 100%;
+     height: 100%;
+     top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+     line-height: 30vh;
+     color: #00F3F1;
+     font-size: 1.4em;
+     font-weight: 300;
+}
+#navbar .brand a img{
+    position: relative;
+     top: 39px;
+}
+#navbar .brand span{
+    font-weight: 900;
+}
+
+@keyframes border-flicker{
+    0%{border-color: transparent}
+    25%{border-color:#00C7D7}
+    50%{ border-color: transparent}
+    75%{border-color: #00C7D7}
+    100%{border-color: #00C7D7}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* em ->1em-> 100% font-size of the curent element */
